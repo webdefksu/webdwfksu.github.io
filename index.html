@@ -20,6 +20,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -29,15 +30,15 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/main-img.png" alt="монитор">
+ 				<img class="header-img wow zoomIn" src="img/main-img.png" alt="монитор">
  			</div>
  			 			<!-- /.col-7 --> 
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Ксения Красельникова</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS <br>
+ 				<p class="header-pretitle wow zoomIn " data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow zoomIn" data-wow-delay="0.2s">Ксения Красельникова</h1>
+ 				<p class="header-subtitle wow zoomIn" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
  				Разработка сайтов под ключ</p>
- 				<div class="header-button-bloc">
+ 				<div class="header-button-bloc wow zoomIn" data-wow-delay="0.4s">
  					<a href="https://vk.me/k_vorron" class="header-button"> Связаться </a>
  					<small> *это бесплатно </small>
  				</div>
@@ -50,7 +51,7 @@
  </header>
  <section class="portfolio">
  	<div class="container">
- 		<div class="portfolio-blok">
+ 		<div class="portfolio-blok wow zoomIn" data-wow-delay="0.1s">
  		<h2 class="portfolio-title"> Портфолио </h2>
  		<p class="portfolio-subtitle"> мои работы </p>
  		<div class="row">
@@ -85,10 +86,10 @@
  			<div class="col-md-4">
  				<div class="social-block">
  					<p>Подпишитесь:</p>
- 					<a href="https://www.facebook.com/ksyushenka.kseniya?ref=bookmarks"><img src="img/socials/facebook-logo-button.png" alt="Фейсбук"></a>
- 					<a href="https://t.me/vor_ron"><img src="img/socials/telegram-symbol.png" alt="Телеграм"></a>
- 					<a href="https://vk.com/k_vorron"><img src="img/socials/vk-social-logotype.png" alt="ВК"></a>
- 					<a href="#"><img src="img/socials/youtube-symbol.png" alt="Ютуб"></a>
+ 					<a href="https://www.facebook.com/ksyushenka.kseniya?ref=bookmarks"><img class="wow bounce" src="img/socials/facebook-logo-button.png" alt="Фейсбук" data-wow-delay="0.1s"></a>
+ 					<a href="https://t.me/vor_ron"><img class="wow bounce" src="img/socials/telegram-symbol.png" alt="Телеграм" data-wow-delay="0.2s"></a>
+ 					<a href="https://vk.com/k_vorron"><img class="wow bounce" src="img/socials/vk-social-logotype.png" alt="ВК" data-wow-delay="0.3s"></a>
+ 					<a href="#"><img class="wow bounce" src="img/socials/youtube-symbol.png" alt="Ютуб" data-wow-delay="0.4s"></a>
  				</div>
  			</div>
  			<div class="col-md-4">
@@ -102,6 +103,12 @@
  	</div>
  	<!-- /.container -->
  </footer>
+
+ <script src="js/wow.min.js"></script>
+
+ <script>
+ 	new WOW().init();
+ </script>
 
 </body>
 </html>
